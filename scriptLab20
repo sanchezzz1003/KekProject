@@ -1,0 +1,48 @@
+#!/bin/bash
+
+cmp -l 1.txt 2.txt
+cat footer.txt
+head -n 3 1.txt
+cat footer.txt
+tail -n 4 2.txt
+cat footer.txt
+wc 1.txt
+cat footer.txt
+diff -u 1.txt 2.txt
+cat footer.txt
+grep 5 1.txt
+cat footer.txt
+du
+cat footer.txt
+sort -r 1.txt
+cat footer.txt
+od -b 1.txt
+cat footer.txt
+cut -c 2-5 1.txt
+cat footer.txt
+touch copy1.txt
+cat footer.txt
+dd if=1.txt of=copy1.txt
+cat footer.txt
+tar -cpvf 1.tar 1.txt 
+cat footer.txt
+tr "1" "5" < 2.txt
+cat footer.txt
+touch sorted1.txt
+sort 1.txt > sorted1.txt
+touch sorted2.txt
+sort 2.txt > sorted2.txt
+comm sorted1.txt sorted2.txt
+cat footer.txt
+sum 1.txt
+cat footer.txt
+md5sum 2.txt
+cat footer.txt
+find *.txt
+cat footer.txt
+split -l 4 1.txt kek.
+cat kek.aa
+cat kek.ab 
+cat footer.txt
+vim
+cat footer.txt
