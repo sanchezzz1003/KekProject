@@ -1,0 +1,37 @@
+#!/bin/bash
+
+read -p "Input file length:" y
+
+while [[ -z "$y" ]]
+do
+	read -p "Empty length. Input file length:" y
+done
+if [[ "$y" = "?" ]]
+then
+	echo "This program extends lenth of all files in this\
+	directory to the lenth which was entered."
+else
+	for args in $(ls)
+	do
+		z=$(echo $args | grep -ne ".txt")
+	        if [[ -n $z ]]
+	        then
+			cp $args buf
+			wc -m $args > sizetmp
+			x=$(cut -d' ' -f 1 sizetmp)
+			while  [[ $y -gt $x ]]
+			do
+	        		cat $args updater > tmp
+	        		cp tmp $args
+	        		wc -m $args > sizetmp
+	        		x=$(cut -d' ' -f 1 sizetmp)
+			done
+		cat $args
+		echo "---------------------------------------------------------------"
+		cp buf $args
+		z=
+		fi
+	done
+fi
+
+

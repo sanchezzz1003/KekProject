@@ -1,0 +1,14 @@
+#!/bin/bash
+
+wc -m 1.txt 
+cut -d' ' -f 1 f1.txt > size1.txt
+
+while [ <size.txt -gt <size1.txt ] 
+do
+	cat 1.txt updater.txt >  cat1.txt
+	cp cat1.txt 1.txt
+	wc -m 1.txt > f1.txt
+	cut -d' ' -f 1 f1.txt > size1.txt
+done
+
+cat 1.txt
