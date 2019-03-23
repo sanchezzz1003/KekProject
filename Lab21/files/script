@@ -8,8 +8,9 @@ do
 done
 if [[ "$y" = "?" ]]
 then
-	echo "This program extends lenth of all files in this\
-	directory to the lenth which was entered."
+	echo "This program extends length of all files in this \
+directory to the length which was entered by using file \
+updater, prints them and then returns them to their initial state."
 else
 	for args in $(ls)
 	do
